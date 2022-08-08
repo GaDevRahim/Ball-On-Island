@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     float timeWait = 5.0f;
 
     internal static bool gameOver = false;
-    // Start is called before the first frame update
+
     void Start()
     {
         playerRG = GetComponent<Rigidbody>();

@@ -13,21 +13,13 @@ public class SpawnManager : MonoBehaviour
     float randomZ;
     Vector3 randomPosi;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if(FindObjectsOfType<Enamy>().Length == 0 && !PlayerController.gameOver)
         {
             waveCount++;
             CreateObj();
-        }
-            
+        }    
     }
 
     void CreateObj()
